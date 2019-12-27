@@ -1,4 +1,4 @@
-loadusr -Wn arduino /home/linuxcnc/mill/mill/usbprobe
+loadusr -Wn usbprobe /dev/ttyUSB0
 
 net usbprobe probe-in => motion.probe-input
 #net usbprobe probe-in-not => motion.probe-input
