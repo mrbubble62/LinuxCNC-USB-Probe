@@ -1,4 +1,4 @@
 loadusr -Wn usbprobe /dev/ttyUSB0
 
-net usbprobe probe-in => motion.probe-input
-#net usbprobe probe-in-not => motion.probe-input
+net probe-in <= usbprobe.in 
+net probe-in => motion.probe-input
