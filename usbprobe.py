@@ -16,6 +16,8 @@ ser = serial.Serial(PORT, 115200, timeout=2)
 c = hal.component("usbprobe")
 c.newpin("probe-in",hal.HAL_BIT,hal.HAL_IN)
 c.newpin("probe-in-not",hal.HAL_BIT,hal.HAL_IN)
+c['probe-in'] = 1
+c['probe-in-not'] = 0
 c.ready()
 
 try:
